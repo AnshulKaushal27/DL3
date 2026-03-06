@@ -36,3 +36,47 @@ Where:
 # Perceptron Model
 
 The perceptron computes the output using the linear function:
+
+z = w · x + b
+
+Where:
+
+- **w** = weight vector  
+- **x** = input vector  
+- **b** = bias  
+
+The prediction rule is:
+
+y = 1  if z > 0  
+y = -1 if z ≤ 0
+
+---
+
+# Weight Update Rule
+
+When the prediction is incorrect, the weights and bias are updated using the perceptron learning rule:
+
+w = w + η * y * x  
+b = b + η * y
+
+Where:
+
+- **η (eta)** = learning rate  
+- **y** = true label  
+- **x** = input vector  
+
+---
+
+# Training Process
+
+1. Initialize weights and bias.
+2. For each training example, compute the linear output.
+3. Predict the class label.
+4. Update weights and bias if the prediction is incorrect.
+5. Repeat for multiple epochs until the model converges.
+
+---
+
+# Conclusion
+
+The perceptron successfully learns the **AND gate classification problem** by adjusting its weights and bias through iterative updates. This demonstrates the fundamental concept of learning in neural networks.
